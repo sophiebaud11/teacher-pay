@@ -1,5 +1,6 @@
 body {
   min-width: 100vw;
+  height: 700vh;
 }
 nav {
   background: #00272B;
@@ -9,6 +10,7 @@ nav {
   height: 5vh;
   position: fixed;
   top: 0px;
+  z-index: 1;
   left: 0px;
 }
 nav a {
@@ -21,13 +23,21 @@ nav a {
   position: absolute;
 
 }
-#intro {
+section {
+  width: 100%;
   height: 100vh;
-  width: 100vh;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+}
+#intro {
+  top: 0vh;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15%;
   font-size: 0.8em;
+  position: absolute;
+
   text-align: center;
 }
 
@@ -44,18 +54,156 @@ h1 {
   margin-top: 0;
 }
 
-#tableauViz1 {
+#viz1 {
+  top: 100vh;
   width: 100%;
-  height: 100vh;
-  margin-left: auto ;
-  margin-right: auto ;
+  position: absolute;
 }
 
-#tableauViz1 h2 {
+#tableauViz1 {
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 100%;
+  height: 80vh;
+}
+
+.titletext {
   font-family: Poppins;
   text-align: center;
   color: black;
   padding: 0;
-  margin: 0;
-  font-size: 2em;
+  margin-top: 5%;
+  font-size: 2.5em;
+  position: sticky;
+  font-weight: bold;
+  z-index: 1;
+  background-color: white;
+  top:5vh;
+}
+
+p {
+  font-size: 1.5em;
+  font-family: Raleway;
+  text-align: center;
+}
+
+#districtViz {
+  top: 200vh;
+  width: 100%;
+  position: absolute;
+}
+#viz1607997707548 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 75vh;
+}
+#introTeachers {
+  top: 300vh;
+  width: 100%;
+  position: absolute;
+}
+.col1 {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.col1 h3 {
+  font-size: 25px;
+  margin-top: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: 100;
+  font-family: Poppins;
+
+}
+.col1 h4 {
+  font-size: 17px;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: Raleway;
+}
+.boldText {
+  font-weight: bold;
+  color: #BE6E9F;
+}
+.col2 {
+  right: 0;
+  width: 50%;
+  float: right;
+}
+#introPics {
+  height: 65vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+#sullivanCounty {
+  top: 400vh;
+  width: 100%;
+  position: absolute;
+}
+.county h4 {
+  font-family: Raleway;
+  text-align: right;
+  font-size: 20px;
+  margin-right: 5%;
+}
+.county .titletext {
+  margin-right: 5%;
+  margin-bottom: 0%;
+  text-align: right;
+  font-size: 64px;
+}
+#sullivan {
+  height: 70vh;
+  margin-top: 20%;
+}
+#joanna {
+  height: 30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#duvalCounty {
+  top: 500vh;
+  width: 100%;
+  position: absolute;
+}
+#duval {
+  height: 70vh;
+  margin-top: 20%;
+}
+#duvalCounty .titletext {
+  width: 80%;
+  float: right;
+}
+#duvalCounty h4 {
+  width: 80%;
+  float: right;
+}
+#alice {
+  height: 30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#platteCounty {
+  top: 600vh;
+  width: 100%;
+  position: absolute;
+}
+#platteCounty h4 {
+  width: 80%;
+  float: right;
+}
+#max {
+  height: 30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }

@@ -17,10 +17,57 @@
       <p style="font-family: Raleway">Let's answer this question on the state, county, and individual level.</p>
     </section>
     <section id="viz1">
+      <h2 class="titletext">Well, it depends on where you live.</h2>
       <div id="tableauViz1">
-        <h2>Well, it depends on where you live.</h2>
         <div class='tableauPlaceholder' id='viz1606150434796' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sl&#47;slide1viz&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='slide1viz&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sl&#47;slide1viz&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1606150434796');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height='100%';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
+    </section>
+    <section id="districtViz">
+      <h2 class="titletext">Even within counties, pay differs widely by school district.</h2>
+      <p>We can see this in action by taking a closer look at districts in three states.</p>
+      <div id="tableauViz2">
+        <div class='tableauPlaceholder' id='viz1607997707548'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageTeacherSalaryPerDistrictFLNEandNY&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AverageTeacherSalaryPerDistrictFLNEandNY&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageTeacherSalaryPerDistrictFLNEandNY&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607997707548');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      </div>
+    </section>
+    <section id="introTeachers">
+      <h2 class="titletext">Now let’s take a look at what these numbers mean on an individual scale. </h2>
+      <div class="col1">
+        <h3>Here are three teachers who make the <span class="boldText"> average teacher salary</span> for their county. Let’s learn more about their counties to see how these differences in pay play out.</h4>
+        <h4>Each individual also roughly  represents the median teacher salary for its state.</h6>
+      </div>
+      <div class="col2">
+        <img src="intro_pics.svg" alt="intro teachers pics" id="introPics">
+      </div>
+    </section>
+    <section id="sullivanCounty" class="county">
+      <div class="col1">
+        <img src="sullivan.svg" alt="Sullivan graphic" id="sullivan">
+      </div>
+      <div class="col2">
+        <h2 class=titletext>Sullivan County, at a Glance</h2>
+        <h4>Joanna, who works in Sullivan County, makes $20-30,000 more a year than Max or Alice. This reflects how New York pays its teachers the most of any other state on average. However, this varies across districts, in part because New York has more districts than either Nebraska or Florida.</h4>
+        <img src="joanna.svg" alt="Joanna graphic" id="joanna">
+      </div>
+    </section>
+    <section id="duvalCounty" class="county">
+      <div class="col1">
+        <img src="duval.svg" alt="Duval graphic" id="duval">
+      </div>
+      <div class="col2">
+        <h2 class=titletext>Duval County, at a Glance</h2>
+        <h4>Alice works in Duval County, the most populous of the three. She earns around $8,000 less than Max, and $30,000 less than Joanna. Florida is in the bottom 5 states in terms of average teacher salary.</h4>
+        <img src="alice.svg" alt="Alice graphic" id="alice">
+      </div>
+    </section>
+    <section id="platteCounty" class="county">
+      <div class="col1">
+        <img src="platte.svg" alt="Platte graphic" id="duval">
+      </div>
+      <div class="col2">
+        <h2 class=titletext>Platte County, at a Glance</h2>
+        <h4>Max lives in Platte County, the least dense county of the three in terms of population. He makes around $20,000 less than Joanna but  $8,000 more than Alice, which shows how Nebraska on average pays teachers close to the median salary across all states.</h4>
+        <img src="max.svg" alt="Max graphic" id="max">
+      </div>
     </section>
   </body>
 </html>
