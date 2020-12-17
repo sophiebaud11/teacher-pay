@@ -1,6 +1,6 @@
 body {
   min-width: 100vw;
-  height: 700vh;
+  height: 1000vh;
 }
 nav {
   background: #00272B;
@@ -12,16 +12,19 @@ nav {
   top: 0px;
   z-index: 1;
   left: 0px;
+  display: table;
+
 }
 nav a {
-  font-size: 0.3em;
+  font-size:0.65em;
   color: white;
   font-weight: bold;
   font-family: Poppins;
   top: 25%;
-  left: 1%;
-  position: absolute;
-
+  display: table-cell;
+  width: 16.666666667%;
+  text-align: center;
+  padding: 10px;
 }
 section {
   width: 100%;
@@ -37,21 +40,19 @@ section {
   margin-top: 15%;
   font-size: 0.8em;
   position: absolute;
-
   text-align: center;
 }
 
 #intro p {
   font-size: 1.5em;
-
 }
 
-h1 {
+#intro h1 {
+  top: 50vh;
   font-family: Poppins;
   text-align: center;
   font-size: 5em;
   color: black;
-  margin-top: 0;
 }
 
 #viz1 {
@@ -72,7 +73,7 @@ h1 {
   text-align: center;
   color: black;
   padding: 0;
-  margin-top: 5%;
+  margin-top: 10%;
   font-size: 2.5em;
   position: sticky;
   font-weight: bold;
@@ -206,4 +207,53 @@ p {
   margin-left: auto;
   margin-right: auto;
 
+}
+#nationalPic {
+  top: 700vh;
+  width: 100%;
+  position: absolute;
+}
+.cols {
+  width: 100%;
+}
+#nationalPic .cols p {
+  float: right;
+  width: 30%;
+  padding-right: 5%;
+  margin-top: 10%;
+}
+.boldTextRed {
+  font-weight: bold;
+  color: #E15759;
+}
+#viz1608242384869 {
+  width: 70%;
+  margin-top: 3%;
+  float: left;
+  padding-left: 3%;
+}
+#tellFullStory {
+  top: 800vh;
+  width: 100%;
+  position: absolute;
+}
+#tellFullStory p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#full_story {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#costOfLiving {
+  top: 900vh;
+  width: 100%;
+  position: absolute;
+}
+#viz1608244711325 {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
