@@ -1,6 +1,6 @@
 body {
   min-width: 100vw;
-  height: 1000vh;
+  height: 1100vh;
 }
 nav {
   background: #00272B;
@@ -72,24 +72,33 @@ section {
   font-family: Poppins;
   text-align: center;
   color: black;
-  padding: 0;
-  margin-top: 10%;
-  font-size: 2.5em;
+  font-size: 2em;
   position: sticky;
   font-weight: bold;
   z-index: 1;
   background-color: white;
+  padding-top: 10px;
   top:5vh;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.15em;
+  margin: 2%;
   font-family: Raleway;
   text-align: center;
 }
-
-#districtViz {
+#countyViz {
   top: 200vh;
+  width: 100%;
+  position: absolute;
+}
+#viz1610557469475 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#districtViz {
+  top: 300vh;
   width: 100%;
   position: absolute;
 }
@@ -97,11 +106,11 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  height: 75vh;
+  width: 800px;
+  height: 600px;
 }
 #introTeachers {
-  top: 300vh;
+  top: 400vh;
   width: 100%;
   position: absolute;
 }
@@ -111,7 +120,7 @@ p {
   text-align: center;
 }
 .col1 h3 {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 20%;
   margin-left: 5%;
   margin-right: 5%;
@@ -133,6 +142,7 @@ p {
 .col2 {
   right: 0;
   width: 50%;
+  height: 100%;
   float: right;
 }
 #introPics {
@@ -143,21 +153,24 @@ p {
   margin-top: 5%;
 }
 #sullivanCounty {
-  top: 400vh;
+  top: 500vh;
   width: 100%;
   position: absolute;
 }
 .county h4 {
   font-family: Raleway;
   text-align: right;
-  font-size: 20px;
+  font-size: 19px;
   margin-right: 5%;
+  margin-top: 10%;
+
 }
 .county .titletext {
   margin-right: 5%;
   margin-bottom: 0%;
+  margin-top: 10%;
   text-align: right;
-  font-size: 64px;
+  font-size: 48px;
 }
 #sullivan {
   height: 70vh;
@@ -165,12 +178,13 @@ p {
 }
 #joanna {
   height: 30vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
+  margin-right: 5%;
+  margin-top: 10%;
+
 }
 #duvalCounty {
-  top: 500vh;
+  top: 600vh;
   width: 100%;
   position: absolute;
 }
@@ -188,12 +202,12 @@ p {
 }
 #alice {
   height: 30vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
+  margin-top: 10%;
+  margin-right: 5%;
 }
 #platteCounty {
-  top: 600vh;
+  top: 700vh;
   width: 100%;
   position: absolute;
 }
@@ -203,24 +217,23 @@ p {
 }
 #max {
   height: 30vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
+  float: right;
+  margin-right: 5%;
+  margin-top: 10%;
 }
 #nationalPic {
-  top: 700vh;
+  top: 800vh;
   width: 100%;
   position: absolute;
 }
 .cols {
   width: 100%;
 }
-#nationalPic .cols p {
-  float: right;
-  width: 30%;
-  padding-right: 5%;
-  margin-top: 10%;
+#nationalPic .col2 p {
+  margin-top: 25%;
+  margin-left: 10%;
+  font-size: 20px;
+  margin-right: 10%;
 }
 .boldTextRed {
   font-weight: bold;
@@ -233,22 +246,25 @@ p {
   padding-left: 3%;
 }
 #tellFullStory {
-  top: 800vh;
+  top: 900vh;
   width: 100%;
   position: absolute;
 }
 #tellFullStory p {
+  margin-top: 3%;
   margin-left: 5%;
   margin-right: 5%;
+  font-size: 18px;
 }
 #full_story {
-  width: 80%;
+  width: 75%;
+  margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 #costOfLiving {
-  top: 900vh;
+  top: 1000vh;
   width: 100%;
   position: absolute;
 }
@@ -256,4 +272,34 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+#conclusion {
+  top: 1100vh;
+  width: 100%;
+  position: absolute;
+  font-family: Raleway;
+  text-align: center;
+}
+#methods {
+  top: 1200vh;
+  height: 50%;
+  z-index: 0;
+  background: #00272B;
+  color: white;
+
+  position: absolute;
+  width: 100vw;
+}
+#methods p {
+  font-size: 17px;
+  margin: 2%;
+}
+#methods h3 {
+  font-size: 20px;
+}
+#methods .titletext {
+  background: #00272B;
+  color: white;
+  font-weight: 300;
+  margin-top: 0;
 }
