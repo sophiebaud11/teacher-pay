@@ -1,6 +1,11 @@
+html {
+  box-sizing: border-box;
+}
 body {
-  min-width: 100vw;
+  width: 100%;
   height: 1100vh;
+  box-sizing: border-box;
+  margin: 0;
 }
 nav {
   background: #00272B;
@@ -83,7 +88,10 @@ section {
 
 p {
   font-size: 1.15em;
-  margin: 2%;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-family: Raleway;
   text-align: center;
 }
@@ -157,6 +165,12 @@ p {
   width: 100%;
   position: absolute;
 }
+#cat {
+  height: 20vh;
+  float: right;
+  margin-right: 10%;
+  margin-top: 10%;
+}
 .county h4 {
   font-family: Raleway;
   text-align: right;
@@ -165,22 +179,36 @@ p {
   margin-top: 10%;
 
 }
-.county .titletext {
+.county_titletext {
+  font-family: Poppins;
   margin-right: 5%;
   margin-bottom: 0%;
   margin-top: 10%;
   text-align: right;
-  font-size: 48px;
+  font-size: 3em;
 }
 #sullivan {
   height: 70vh;
   margin-top: 20%;
 }
+#sullivan_list {
+  width: 80%;
+  float: right;
+}
+#sullivan_list li {
+  margin: 0;
+  padding: 18px 0 18px 48px;
+	list-style: none;
+	background-image: url("sullivan_bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
+}
 #joanna {
   height: 30vh;
   float: right;
   margin-right: 5%;
-  margin-top: 10%;
+  margin-top: 5%;
 
 }
 #duvalCounty {
@@ -196,30 +224,66 @@ p {
   width: 80%;
   float: right;
 }
-#duvalCounty h4 {
+#duval_list {
   width: 80%;
   float: right;
+}
+li {
+  font-size: 1.15em;
+  font-family: Raleway;
+}
+#duval_list li {
+  margin: 0;
+  padding: 18px 0 18px 48px;
+	list-style: none;
+	background-image: url("duval_bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
 }
 #alice {
   height: 30vh;
   float: right;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+#plant {
+  height: 22vh;
+  float: right;
   margin-top: 10%;
-  margin-right: 5%;
+  margin-right: 15%;
+
 }
 #platteCounty {
   top: 700vh;
   width: 100%;
   position: absolute;
 }
-#platteCounty h4 {
+#platte_list {
   width: 80%;
   float: right;
+}
+#platte_list li {
+  margin: 0;
+  padding: 18px 0 18px 48px;
+	list-style: none;
+	background-image: url("platte_bulletpoint.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 40px;
 }
 #max {
   height: 30vh;
   float: right;
-  margin-right: 5%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+#paint {
+  height: 18vh;
+  float: right;
+  margin-right: 13%;
   margin-top: 10%;
+
 }
 #nationalPic {
   top: 800vh;
@@ -279,6 +343,16 @@ p {
   position: absolute;
   font-family: Raleway;
   text-align: center;
+  background: url("school_background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#conclusion .titletext {
+  background-color: inherit;
+}
+#conclusion h3 {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 #methods {
   top: 1200vh;
@@ -286,9 +360,8 @@ p {
   z-index: 0;
   background: #00272B;
   color: white;
-
   position: absolute;
-  width: 100vw;
+  width: 100%;
 }
 #methods p {
   font-size: 17px;
