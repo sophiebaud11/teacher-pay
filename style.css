@@ -42,21 +42,26 @@ section {
   top: 0vh;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15%;
+  /* margin-top: 15%; */
   font-size: 0.8em;
   position: absolute;
   text-align: center;
+  background-color: #ECFFF0;
 }
 
 #intro p {
   font-size: 1.5em;
 }
-
+#money_group {
+  height: 30vh;
+  padding-top: 2%;
+}
 #intro h1 {
   top: 50vh;
+  margin-top: 15%;
   font-family: Poppins;
   text-align: center;
-  font-size: 5em;
+  font-size: 4em;
   color: black;
 }
 
@@ -82,7 +87,7 @@ section {
   font-weight: bold;
   z-index: 1;
   background-color: white;
-  padding-top: 10px;
+  padding-top: 15px;
   top:5vh;
 }
 
@@ -129,11 +134,11 @@ p {
 }
 .col1 h3 {
   font-size: 20px;
-  margin-top: 20%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-top: 25%;
+  margin-left: 7%;
+  margin-right: 7%;
   font-weight: 100;
-  font-family: Poppins;
+  font-family: Raleway;
 
 }
 .col1 h4 {
@@ -165,7 +170,7 @@ p {
   width: 100%;
   position: absolute;
 }
-#cat {
+#fish {
   height: 20vh;
   float: right;
   margin-right: 10%;
@@ -202,12 +207,12 @@ p {
 	background-image: url("sullivan_bulletpoint.png");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 40px;
+	background-size: 30px;
 }
 #joanna {
   height: 30vh;
   float: right;
-  margin-right: 5%;
+  margin-right: 25%;
   margin-top: 5%;
 
 }
@@ -239,13 +244,13 @@ li {
 	background-image: url("duval_bulletpoint.png");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 40px;
+	background-size: 30px;
 }
 #alice {
   height: 30vh;
   float: right;
   margin-top: 5%;
-  margin-right: 10%;
+  margin-right: 30%;
 }
 #plant {
   height: 22vh;
@@ -270,12 +275,12 @@ li {
 	background-image: url("platte_bulletpoint.png");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 40px;
+	background-size: 30px;
 }
 #max {
   height: 30vh;
   float: right;
-  margin-right: 10%;
+  margin-right: 25%;
   margin-top: 5%;
 }
 #paint {
@@ -343,7 +348,7 @@ li {
   position: absolute;
   font-family: Raleway;
   text-align: center;
-  background: url("school_background.png");
+  background: url("school_background1.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
