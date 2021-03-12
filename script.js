@@ -25,7 +25,7 @@ svg.append('rect')
     .on('click', clicked);
 
 
-Promise.resolve(d3.json('us-counties.topojson'))
+Promise.resolve(d3.json('counties-10m.json'))
     .then(ready);
 
 var projection = d3.geoAlbersUsa()
