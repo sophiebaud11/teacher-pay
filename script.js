@@ -34,7 +34,7 @@ console.log(svg);
 //   .then(ready);
 Promise.resolve(d3.json('us-counties.topojson'))
     .then(ready);
-
+console.log(d3.json('us-counties.topojson'));
 var projection = d3.geoAlbersUsa()
     .translate([width /2 , height / 2])
     .scale(width);
