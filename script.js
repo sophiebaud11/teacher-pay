@@ -35,6 +35,7 @@ var projection = d3.geoAlbersUsa()
     .scale(width);
 
 console.log(topojson.feature(us, us.objects.counties).features);
+console.log(projection);
 
 var path = d3.geoPath()
     .projection(projection);
