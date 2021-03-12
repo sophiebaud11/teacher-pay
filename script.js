@@ -4,6 +4,7 @@ var margin = {
     left: 10,
     right:10
 };
+console.log(d3.select("#map_viz"));
 
 var width = parseInt(d3.select("#map_viz").style('width'))
     , width = width - margin.left - margin.right
