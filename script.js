@@ -4,7 +4,8 @@ var margin = {
     left: 10,
     right:10
 };
-var width = parseInt(d3.select('#map_viz').style('width'))
+
+var width = parseInt(d3.select("#map_viz").style('width'))
     , width = width - margin.left - margin.right
     , mapRatio = 0.5
     , height = width * mapRatio
