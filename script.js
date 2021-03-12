@@ -4,17 +4,17 @@ var margin = {
     left: 10,
     right:10
 };
-console.log(d3.select("#map_viz"));
+// console.log(d3.select("#map_viz"));
+var mapRatio = 0.5
 
-var width = parseInt(d3.select("#map_viz").style('width'))
-    , width = width - margin.left - margin.right
-    , mapRatio = 0.5
-    , height = width * mapRatio
-    , active = d3.select(null);
+var width = 800 - margin.left - margin.right;
 
-console.log(width);
+var height = width * mapRatio;
+var active = d3.select(null);
+// console.log(height);
 
-const svg = d3.select("#map_viz").append('svg')
+var svg = d3.select("map.viz")
+    .attr("viewBox", [0, 0, 960, 500]);
     .attr('class', 'center-container')
     .attr('height', height + margin.top + margin.bottom)
     .attr('width', width + margin.left + margin.right);
@@ -24,7 +24,6 @@ svg.append('rect')
     .attr('height', height + margin.top + margin.bottom)
     .attr('width', width + margin.left + margin.right)
     .on('click', clicked);
-
 
 d3.json("./json/counties-10m.json", function(error, us) {
       if (error) throw error;
