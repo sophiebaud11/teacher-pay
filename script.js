@@ -4,14 +4,11 @@ var margin = {
     left: 10,
     right:10
 };
-var height = 500;
-var width = 960;
-//
-// var width = parseInt(d3.select('#map_viz').style('width'))
-//     , width = width - margin.left - margin.right
-//     , mapRatio = 0.5
-//     , height = width * mapRatio
-//     , active = d3.select(null);
+var width = parseInt(d3.select('#map_viz').style('width'))
+    , width = width - margin.left - margin.right
+    , mapRatio = 0.5
+    , height = width * mapRatio
+    , active = d3.select(null);
 
 var svg = d3.select('#map_viz').append('svg')
     .attr('class', 'center-container')
