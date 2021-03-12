@@ -25,6 +25,8 @@ svg.append('rect')
     .attr('width', width + margin.left + margin.right)
     .on('click', clicked);
 
+console.log(svg)
+
 d3.json("./json/counties-10m.json", function(error, us) {
       if (error) throw error;
 
