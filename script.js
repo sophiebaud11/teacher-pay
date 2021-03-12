@@ -25,8 +25,8 @@ svg.append('rect')
     .on('click', clicked);
 
 
-Promise.resolve(d3.json('https://github.com/sophiebaud11/teacher-pay/blob/main/json/counties-10m.json'))
-    .then(ready);
+d3.json("./json/counties-10m.json", function(error, us) {
+      if (error) throw error;
 
 var projection = d3.geoAlbersUsa()
     .translate([width /2 , height / 2])
@@ -68,6 +68,7 @@ function ready(us) {
         .attr("d", path);
 
 }
+});
 
 function clicked(d) {
     if (d3.select('.background').node() === this) return reset();
