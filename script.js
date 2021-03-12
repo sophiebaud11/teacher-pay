@@ -41,8 +41,6 @@ var g = svg.append("g")
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
 
-function ready(us) {
-
     g.append("g")
         .attr("id", "counties")
         .selectAll("path")
@@ -67,7 +65,6 @@ function ready(us) {
         .attr("id", "state-borders")
         .attr("d", path);
 
-}
 });
 
 function clicked(d) {
