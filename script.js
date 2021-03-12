@@ -27,8 +27,8 @@ svg.append('rect')
 
 console.log(svg);
 
-d3.json("./json/counties-10m.json", function(error, us) {
-      if (error) throw error;
+Promise.resolve(d3.json("./json/counties-10m.json")
+  .then(ready);
 
 var projection = d3.geoAlbersUsa()
     .translate([width /2 , height / 2])
@@ -45,7 +45,9 @@ var g = svg.append("g")
     .attr('class', 'center-container center-items us-state')
     .attr('transform', 'translate('+margin.left+','+margin.top+')')
     .attr('width', width + margin.left + margin.right)
-    .attr('height', height + margin.top + margin.bottom)
+    .attr('height', height + margin.top + margin.bottom);
+
+function ready(us) {
 
     g.append("g")
         .attr("id", "counties")
@@ -71,7 +73,7 @@ var g = svg.append("g")
         .attr("id", "state-borders")
         .attr("d", path);
 
-});
+};
 
 function clicked(d) {
     if (d3.select('.background').node() === this) return reset();
