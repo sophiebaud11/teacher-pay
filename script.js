@@ -14,7 +14,7 @@ var active = d3.select(null);
 // console.log(height);
 
 var svg = d3.select("map.viz")
-    .attr("viewBox", [0, 0, 960, 500]);
+    .attr("viewBox", [0, 0, 960, 500])
     .attr('class', 'center-container')
     .attr('height', height + margin.top + margin.bottom)
     .attr('width', width + margin.left + margin.right);
