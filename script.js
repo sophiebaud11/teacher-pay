@@ -1,8 +1,6 @@
-require(["d3","geo","topo"],function(d3,geo,topojson){
-    // you can now use topojson!
-});
-
-
+// require(["d3","geo","topo"],function(d3,geo,topojson){
+//     // you can now use topojson!
+// });
 var margin = {
     top: 10,
     bottom: 10,
