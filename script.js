@@ -10,6 +10,8 @@ var width = parseInt(d3.select('#map_viz').style('width'))
     , height = width * mapRatio
     , active = d3.select(null);
 
+console.log(width);
+
 var svg = d3.select('#map_viz').append('svg')
     .attr('class', 'center-container')
     .attr('height', height + margin.top + margin.bottom)
