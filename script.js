@@ -1,3 +1,8 @@
+require(["d3","geo","topo"],function(d3,geo,topojson){
+    // you can now use topojson!
+});
+
+
 var margin = {
     top: 10,
     bottom: 10,
@@ -27,8 +32,10 @@ svg.append('rect')
 
 console.log(svg);
 
-Promise.resolve(d3.json("./json/counties-10m.json"))
-  .then(ready);
+// Promise.resolve(d3.json("./json/counties-10m.json"))
+//   .then(ready);
+Promise.resolve(d3.json('us-counties.topojson'))
+    .then(ready);
 
 var projection = d3.geoAlbersUsa()
     .translate([width /2 , height / 2])
