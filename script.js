@@ -12,7 +12,7 @@ var width = parseInt(d3.select('#map_viz').style('width'))
 
 console.log(width);
 
-var svg = d3.select('#map_viz').append('svg')
+const svg = d3.select("#map_viz").append('svg')
     .attr('class', 'center-container')
     .attr('height', height + margin.top + margin.bottom)
     .attr('width', width + margin.left + margin.right);
