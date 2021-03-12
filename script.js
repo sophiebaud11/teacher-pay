@@ -36,7 +36,7 @@ var projection = d3.geoAlbersUsa()
 
 console.log(topojson.feature(us, us.objects.counties).features);
 console.log(projection);
-// this is to make github pages load
+// this is to make github pages load pls
 
 var path = d3.geoPath()
     .projection(projection);
