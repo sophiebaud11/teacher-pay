@@ -1,5 +1,6 @@
 function generateMapZoom() {
 let us;
+
 d3.json("https://d3js.org/us-10m.v1.json")
   .then(function(data) {
     us = data;
@@ -7,8 +8,9 @@ d3.json("https://d3js.org/us-10m.v1.json")
     path = d3.geoPath();
     const width = 975;
     const height = 610;
-
-    //add a reset button - look at your other d3 things to see how to do it?
+    let isClicked;
+    // get the svg locations of each of the counties and use that to place the county images?
+    // start automating the zooms
 
     const zoom = d3.zoom()
         .scaleExtent([1, 1])
@@ -50,7 +52,7 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .style("fill", function(d) { if (d.id == "36105") {return "#254E70"}
         else if (d.id == "12031") {return "#C6E0FF"}
         else if (d.id == "31141") { return "#00272B" }})
-        .on("click", clicked);
+        .on("click", clickOrReset);
 
     var size = 20
 
@@ -87,24 +89,24 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .attr("d", path(topojson.mesh(us, us.objects.states, (a, b) => a !== b)));
 
 
-
     svg.call(zoom);
 
     function reset() {
-      // states.transition().style("fill", null);
+      console.log(isClicked)
+
       svg.transition().duration(750).call(
         zoom.transform,
         d3.zoomIdentity,
         d3.zoomTransform(svg.node()).invert([width / 2, height / 2])
       );
+      isClicked = 0;
+
     }
 
     function clicked(event, d) {
+      console.log(isClicked)
       const [[x0, y0], [x1, y1]] = path.bounds(d);
       event.stopPropagation();
-      // states.transition().style("fill", null);
-      // d3.select(this).transition().style("fill", "red");
-      // counties.transition().style("stroke", "white");
 
       svg.transition().duration(750).call(
         zoom.transform,
@@ -115,15 +117,23 @@ d3.json("https://d3js.org/us-10m.v1.json")
         d3.pointer(event, svg.node())
 
       );
-      var img = document.getElementById("sullivan_info")
-      if (img.style.display === "block") {
-        img.style.display = "none";
-      } else {
-        img.style.display = "block";
-
-      };
+      isClicked = 1;
     }
+    function clickOrReset(event, d) {
+      // var img = document.getElementById("sullivan_info")
+      console.log(isClicked)
+      if (isClicked == 1) {
+        reset()
+        document.getElementById("sullivan_info").style.display = "none";
+      }
+      else {
+        clicked(event, d)
+        setTimeout('document.getElementById("sullivan_info").style.display = "block";', 775);
 
+        // img.style.display = "block";
+
+      }
+    }
     function zoomed(event) {
       const {transform} = event;
       g.attr("transform", transform);

@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  width: 100%;
+  width: 100vw;
   height: 1350vh;
   box-sizing: border-box;
   margin: 0;
@@ -182,10 +182,11 @@ p {
 }
 #sullivan_info {
   display: none;
-  margin-left: auto;
+  position: absolute;
+  margin-left: 40%;
   margin-right: auto;
-  height: 10vh;
-  margin-top: 3%;
+  width: 15%;
+  top: 25%;  /* margin-top: 55%; */
 }
 #states {
   fill: #aaa;
