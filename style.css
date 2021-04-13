@@ -3,7 +3,7 @@ html {
 }
 body {
   width: 100%;
-  height: 1400vh;
+  height: 1350vh;
   box-sizing: border-box;
   margin: 0;
 }
@@ -165,8 +165,61 @@ p {
   margin-right: auto;
   margin-top: 5%;
 }
-#sullivanCounty {
+#mapzoom {
   top: 500vh;
+  width: 100%;
+  position: absolute;
+  font-family: Raleway;
+  text-align: center;
+}
+#map_viz {
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 100%;
+  height: 80%;
+}
+#sullivan_info {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vh;
+  margin-top: 3%;
+}
+#states {
+  fill: #aaa;
+}
+
+#states .active {
+  display:none;
+}
+
+#state-borders {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.county-boundary {
+  fill: #aaa;
+  stroke: #aaa;
+  stroke-width: .5px;
+}
+
+.county-boundary:hover, .state:hover {
+  fill: white;
+}
+
+.county-boundary:hover, .state:hover {
+    fill: white;
+}
+
+#sullivanCounty {
+  top: 600vh;
   width: 100%;
   position: absolute;
 }
@@ -217,7 +270,7 @@ p {
 
 }
 #duvalCounty {
-  top: 600vh;
+  top: 700vh;
   width: 100%;
   position: absolute;
 }
@@ -260,7 +313,7 @@ li {
 
 }
 #platteCounty {
-  top: 700vh;
+  top: 800vh;
   width: 100%;
   position: absolute;
 }
@@ -291,7 +344,7 @@ li {
 
 }
 #nationalPic {
-  top: 800vh;
+  top: 900vh;
   width: 100%;
   position: absolute;
 }
@@ -315,7 +368,7 @@ li {
   padding-left: 3%;
 }
 #tellFullStory {
-  top: 900vh;
+  top: 1000vh;
   width: 100%;
   position: absolute;
 }
@@ -333,7 +386,7 @@ li {
   display: block;
 }
 #costOfLiving {
-  top: 1000vh;
+  top: 1100vh;
   width: 100%;
   position: absolute;
 }
@@ -343,7 +396,7 @@ li {
   display: block;
 }
 #conclusion {
-  top: 1100vh;
+  top: 1200vh;
   width: 100%;
   position: absolute;
   font-family: Raleway;
@@ -360,7 +413,7 @@ li {
   margin-right: 15%;
 }
 #methods {
-  top: 1200vh;
+  top: 1300vh;
   height: 50%;
   z-index: 0;
   background: #00272B;
@@ -380,37 +433,4 @@ li {
   color: white;
   font-weight: 300;
   margin-top: 0;
-}
-#mapzoom {
-  top: 1300vh;
-  width: 100%;
-  position: absolute;
-  font-family: Raleway;
-  text-align: center;
-}
-#states {
-    fill: #aaa;
-}
-
-#states .active {
-    display:none;
-}
-
-#state-borders {
-    fill: none;
-    stroke: #fff;
-    stroke-width: 1.5px;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    pointer-events: none;
-}
-
-.county-boundary {
-    fill: #aaa;
-    stroke: #fff;
-    stroke-width: .5px;
-}
-
-.county-boundary:hover, .state:hover {
-    fill: orange;
 }
