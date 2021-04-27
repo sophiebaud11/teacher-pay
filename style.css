@@ -3,7 +3,7 @@ html {
 }
 body {
   width: 100vw;
-  height: 1350vh;
+  height: 1050vh;
   box-sizing: border-box;
   margin: 0;
 }
@@ -128,7 +128,7 @@ p {
   position: absolute;
 }
 .col1 {
-  width: 50%;
+  width: 40%;
   float: left;
   text-align: center;
 }
@@ -185,8 +185,24 @@ p {
   position: absolute;
   margin-left: 40%;
   margin-right: auto;
-  width: 15%;
-  top: 25%;  /* margin-top: 55%; */
+  width: 20%;
+  top: 35%;  /* margin-top: 55%; */
+}
+#duval_info {
+  display: none;
+  position: absolute;
+  margin-left: 35%;
+  margin-right: auto;
+  width: 30%;
+  top: 35%;  /* margin-top: 55%; */
+}
+#platte_info {
+  display: none;
+  position: absolute;
+  margin-left: 35%;
+  margin-right: auto;
+  width: 30%;
+  top: 27%;  /* margin-top: 55%; */
 }
 #states {
   fill: #aaa;
@@ -219,7 +235,7 @@ p {
     fill: white;
 }
 
-#sullivanCounty {
+/* #sullivanCounty {
   top: 600vh;
   width: 100%;
   position: absolute;
@@ -343,9 +359,9 @@ li {
   margin-right: 13%;
   margin-top: 10%;
 
-}
+} */
 #nationalPic {
-  top: 900vh;
+  top: 600vh;
   width: 100%;
   position: absolute;
 }
@@ -369,7 +385,7 @@ li {
   padding-left: 3%;
 }
 #tellFullStory {
-  top: 1000vh;
+  top: 700vh;
   width: 100%;
   position: absolute;
 }
@@ -387,7 +403,7 @@ li {
   display: block;
 }
 #costOfLiving {
-  top: 1100vh;
+  top: 800vh;
   width: 100%;
   position: absolute;
 }
@@ -397,7 +413,7 @@ li {
   display: block;
 }
 #conclusion {
-  top: 1200vh;
+  top: 900vh;
   width: 100%;
   position: absolute;
   font-family: Raleway;
@@ -414,7 +430,7 @@ li {
   margin-right: 15%;
 }
 #methods {
-  top: 1300vh;
+  top: 1000vh;
   height: 50%;
   z-index: 0;
   background: #00272B;

@@ -9,6 +9,7 @@
     <script src="https://d3js.org/d3.v6.js"></script>
     <script src="https://unpkg.com/topojson@3"></script>
     <script src="script.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
 
   </head>
   <body>
@@ -21,7 +22,7 @@
     </nav>
     <section id="intro">
       <h1 style="font-family: Poppins">How much do teachers make?</h1>
-      <p style="font-family: Raleway">A lot of people talk about this question. We decided to look at the data to get a sense of how to answer it.</p>
+      <p style="font-family: Raleway">A lot of people talk about this question. We decided to look at one facet of the data—geography—to get a sense of how to answer it.</p>
       <img src="money_group.svg" alt="Group of teachers surrounded by dollar signs." id="money_group">
     </section>
     <section id="viz1">
@@ -68,15 +69,18 @@
       </div>
     </section>
     <section id="mapzoom">
-      <img src="sullivan_info.svg" id="sullivan_info"></img>
-
-      <svg id="map_viz"></svg>
+      <h2 class="titletext">Click to get to know their counties.</h2>
+      <svg id="map_viz">
+      </svg>
       <script>
         generateMapZoom()
       </script>
+      <img src="sullivan_info.svg" id="sullivan_info"></img>
+      <img src="duval_info.svg" id="duval_info"></img>
+      <img src="platte_info.svg" id="platte_info"></img>
     </section>
   </body>
-    <section id="sullivanCounty" class="county">
+    <!-- <section id="sullivanCounty" class="county">
       <div class="col1">
         <img src="sullivan.svg" alt="Sullivan graphic" id="sullivan">
       </div>
@@ -89,7 +93,7 @@
         </ul>
         <img src="joanna1.svg" alt="Joanna graphic" id="joanna">
         <!-- <img src="fish.svg" alt="Joanna's fish" id="fish"> -->
-      </div>
+      <!-- </div>
     </section>
     <section id="duvalCounty" class="county">
       <div class="col1">
@@ -104,7 +108,7 @@
         </ul>
         <img src="alice1.svg" alt="Alice graphic" id="alice">
         <!-- <img src="plant.png" alt="Alice's plant" id="plant"> -->
-      </div>
+      <!-- </div>
     </section>
     <section id="platteCounty" class="county">
       <div class="col1">
@@ -120,20 +124,21 @@
         <img src="max1.svg" alt="Max graphic" id="max">
         <!-- <img src="paint.png" alt="Max's paint" id="paint"> -->
       </div>
-    </section>
+    </section> --> --> -->
     <section id="nationalPic">
-      <h2 class=titletext>The National Picture</h2>
+      <h2 class=titletext>Let's compare these teacher salaries to national numbers.</h2>
       <div class="cols">
         <div class="col1">
           <div class='tableauPlaceholder' id='viz1608242384869' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheNationalPicture&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TheNationalPicture&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheNationalPicture&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1608242384869');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='700px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='600px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         </div>
         <div class="col2">
+          <!-- rephrase this as NOT a question -->
           <p>How do these salaries compare to the <span class="boldText">national average for teacher salary</span> and the <span class="boldTextRed">national median for bachelor’s degree holders</span>?</p>
         </div>
       </div>
     </section>
     <section id="tellFullStory">
-      <h2 class=titletext>But even these more specific numbers can't tell us the full story.</h2>
+      <h2 class=titletext>But even these numbers can't tell us the full story.</h2>
       <p>How far someone’s salary can stretch is impacted by other factors in their life, beyond location and occupation. Do they have kids? Do they have a partner? Do they prioritize saving? How much money do they spend on items other than food or shelter?</p>
       <img src="full-story.svg" alt="Graphic of each teacher surrounded by icons of money, houses, and clothing." id="full_story">
     </section>

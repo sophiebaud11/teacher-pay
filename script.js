@@ -1,3 +1,4 @@
+
 function generateMapZoom() {
 let us;
 
@@ -9,9 +10,23 @@ d3.json("https://d3js.org/us-10m.v1.json")
     const width = 975;
     const height = 610;
     let isClicked;
-    // get the svg locations of each of the counties and use that to place the county images?
-    // start automating the zooms
+    // window.addEventListener("scroll", function(event) {
+    //   var top = this.scrollY;
+    //   console.log(top)
+    //   if (top > 3300 && top < 3500) {
+    //     clickOrReset()
+    //   }
+    // }, false);
 
+
+    // start automating the zooms
+    // var pageHeight = window.innerHeight;
+    //
+    // var scrollPercent = (pageHeight - window.scrollY)/pageHeight;
+    //
+    // if (scrollPercent > -3.9) {
+    //   clickOrReset()
+    // }
     const zoom = d3.zoom()
         .scaleExtent([1, 1])
         .on("zoom", zoomed);
@@ -22,17 +37,16 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .attr("viewBox", [0, 0, width, height])
         .on("click", reset);
 
-    svg.append("text")
-      .attr("x", width / 2 )
-      .attr("y", 20)
-      .style("font-size", "20")
-      .style("font-weight", "bold")
-      .style("font-family", "Poppins")
-      .style("text-anchor", "middle")
-      .text("U.S. Counties");
-
+    // svg.append("text")
+    //   .attr("x", width / 2 )
+    //   .attr("y", 20)
+    //   .style("font-size", "20")
+    //   .style("font-weight", "bold")
+    //   .style("font-family", "Poppins")
+    //   .style("text-anchor", "middle")
+    //   .text("U.S. Counties");
+    //
     const g = svg.append("g");
-
 
     var county_names = [{name: "Sullivan County, NY",
                          color: "#254E70"},
@@ -55,6 +69,7 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .on("click", clickOrReset);
 
     var size = 20
+
 
     svg.selectAll("lineLegend")
       .data(county_names)
@@ -107,7 +122,7 @@ d3.json("https://d3js.org/us-10m.v1.json")
       console.log(isClicked)
       const [[x0, y0], [x1, y1]] = path.bounds(d);
       event.stopPropagation();
-
+      console.log(path.bounds(d))
       svg.transition().duration(750).call(
         zoom.transform,
         d3.zoomIdentity
@@ -124,11 +139,28 @@ d3.json("https://d3js.org/us-10m.v1.json")
       console.log(isClicked)
       if (isClicked == 1) {
         reset()
+      if (d.id == "36105") {
         document.getElementById("sullivan_info").style.display = "none";
       }
+      else if (d.id == "12031") {
+        document.getElementById("duval_info").style.display = "none";
+      }
+      else if (d.id == "31141") {
+        document.getElementById("platte_info").style.display = "none";
+      }
+    }
       else {
         clicked(event, d)
-        setTimeout('document.getElementById("sullivan_info").style.display = "block";', 775);
+        if (d.id == "36105") {
+          setTimeout('document.getElementById("sullivan_info").style.display = "block";', 775);
+        }
+        else if (d.id == "12031") {
+          setTimeout('document.getElementById("duval_info").style.display = "block";', 775);
+        }
+        else if (d.id == "31141") {
+          setTimeout('document.getElementById("platte_info").style.display = "block";', 775);
+        }
+
 
         // img.style.display = "block";
 
@@ -143,4 +175,5 @@ d3.json("https://d3js.org/us-10m.v1.json")
 .catch(function(error) {
   console.log(error)
 });
+
 }
