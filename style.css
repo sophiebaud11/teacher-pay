@@ -2,7 +2,7 @@ html {
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  width: 100%;
   height: 1050vh;
   box-sizing: border-box;
   margin: 0;
@@ -154,7 +154,7 @@ p {
 }
 .col2 {
   right: 0;
-  width: 50%;
+  width: 60%;
   height: 100%;
   float: right;
 }

@@ -5,6 +5,7 @@ let us;
 d3.json("https://d3js.org/us-10m.v1.json")
   .then(function(data) {
     us = data;
+    // filter data here, then make 3 individual svgs
     console.log(us)
     path = d3.geoPath();
     const width = 975;
@@ -31,7 +32,6 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .scaleExtent([1, 1])
         .on("zoom", zoomed);
 
-
     const svg = d3.select("#map_viz")
         .append("svg:svg")
         .attr("viewBox", [0, 0, width, height])
@@ -46,6 +46,11 @@ d3.json("https://d3js.org/us-10m.v1.json")
     //   .style("text-anchor", "middle")
     //   .text("U.S. Counties");
     //
+
+//     console.log(topojson.feature(us, us.objects.states).features.filter(function(d) {
+//   return d.id == 29;
+// })
+
     const g = svg.append("g");
 
     var county_names = [{name: "Sullivan County, NY",
@@ -60,6 +65,8 @@ d3.json("https://d3js.org/us-10m.v1.json")
       .attr("cursor", "pointer")
       .selectAll("path")
       .data(topojson.feature(us, us.objects.counties).features)
+      // .data(topojson.feature(us, us.objects.counties).features.filter(function(d) {
+      //   return d.id.startsWith("36") || d.id.startsWith("31") || d.id.startsWith("12");}))
       .join("path")
         .attr("d", path)
         .attr("class", "county-boundary")
@@ -67,6 +74,20 @@ d3.json("https://d3js.org/us-10m.v1.json")
         else if (d.id == "12031") {return "#C6E0FF"}
         else if (d.id == "31141") { return "#00272B" }})
         .on("click", clickOrReset);
+    //
+    // const ny_counties = g.append("g")
+    //   .attr("id", "counties")
+    //   .attr("cursor", "pointer")
+    //   .selectAll("path")
+    //   .data(topojson.feature(us, us.objects.counties).features.filter(function(d) {
+    //     return d.id.startsWith("12")}))
+    //   .join("path")
+    //     .attr("d", path)
+    //     .attr("class", "county-boundary")
+    //     .style("fill", function(d) { if (d.id == "36105") {return "#254E70"}
+    //     else if (d.id == "12031") {return "#C6E0FF"}
+    //     else if (d.id == "31141") { return "#00272B" }})
+    //     .on("click", clickOrReset);
 
     var size = 20
 
@@ -95,7 +116,9 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .style("font-size", "15")
         .style("font-family", "PT Sans")
 
-
+        // filter for particular states by FIPS code & make other counties not interactive
+      // us.objects.states.filter(function(d) { return d.geometries[0].id == stateID; })
+      // ids: NY,
     g.append("path")
         .attr("id", "state-borders")
         .attr("fill", "none")
@@ -123,6 +146,7 @@ d3.json("https://d3js.org/us-10m.v1.json")
       const [[x0, y0], [x1, y1]] = path.bounds(d);
       event.stopPropagation();
       console.log(path.bounds(d))
+
       svg.transition().duration(750).call(
         zoom.transform,
         d3.zoomIdentity
@@ -150,14 +174,17 @@ d3.json("https://d3js.org/us-10m.v1.json")
       }
     }
       else {
-        clicked(event, d)
+
         if (d.id == "36105") {
+          clicked(event, d)
           setTimeout('document.getElementById("sullivan_info").style.display = "block";', 775);
         }
         else if (d.id == "12031") {
+          clicked(event, d)
           setTimeout('document.getElementById("duval_info").style.display = "block";', 775);
         }
         else if (d.id == "31141") {
+          clicked(event, d)
           setTimeout('document.getElementById("platte_info").style.display = "block";', 775);
         }
 
