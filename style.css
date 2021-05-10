@@ -46,9 +46,10 @@ section {
   font-size: 0.8em;
   position: absolute;
   text-align: center;
-  background-color: #ECFFF0;
+  background-image: linear-gradient(#00272B, white);
 }
 
+/* ECFFF0 */
 #intro p {
   font-size: 1.5em;
 }
@@ -214,7 +215,6 @@ p {
 
 #state-borders {
   fill: none;
-  stroke: #fff;
   stroke-width: 1.5px;
   stroke-linejoin: round;
   stroke-linecap: round;
@@ -222,18 +222,17 @@ p {
 }
 
 .county-boundary {
-  fill: #aaa;
-  stroke: #aaa;
+  fill: #fff;
   stroke-width: .5px;
 }
-
+/*
 .county-boundary:hover, .state:hover {
   fill: white;
 }
 
 .county-boundary:hover, .state:hover {
     fill: white;
-}
+} */
 
 /* #sullivanCounty {
   top: 600vh;
@@ -418,7 +417,8 @@ li {
   position: absolute;
   font-family: Raleway;
   text-align: center;
-  background: url("school_background1.png");
+  background-image: linear-gradient(white, #00272B);
+  /* background: url("school_background1.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }

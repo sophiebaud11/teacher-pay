@@ -62,19 +62,56 @@ d3.json("https://d3js.org/us-10m.v1.json")
 
     const counties = g.append("g")
       .attr("id", "counties")
-      .attr("cursor", "pointer")
       .selectAll("path")
       .data(topojson.feature(us, us.objects.counties).features)
       // .data(topojson.feature(us, us.objects.counties).features.filter(function(d) {
-      //   return d.id.startsWith("36") || d.id.startsWith("31") || d.id.startsWith("12");}))
+      //   return d.id.startsWith("36") | d.id.startsWith("31") | d.id.startsWith("12");}))
       .join("path")
         .attr("d", path)
+        .attr("cursor", "pointer")
         .attr("class", "county-boundary")
+        .attr("stroke", function(d) {if (d.id.startsWith("36")) {return "#C4D8F3"}
+        else if (d.id.startsWith("12")) {return "#002e66"}
+        else if (d.id.startsWith("31")) {return "#91b191"}
+        else {return "#fff"}})
+        // .attr("stroke", function(d) {if (d.id.startsWith("36")) {return "#254E70"}
+        // else if (d.id.startsWith("12")) {return "#C6E0FF"}
+        // else if (d.id.startsWith("31")) {return "#00272B"}
+        // else {return "#d9d9d9"}})
         .style("fill", function(d) { if (d.id == "36105") {return "#254E70"}
+        else if (d.id.startsWith("36")) {return "#C4D8F3"}
         else if (d.id == "12031") {return "#C6E0FF"}
-        else if (d.id == "31141") { return "#00272B" }})
+        else if (d.id.startsWith("12")) {return "#002e66"}
+        else if (d.id == "31141") { return "#00272B" }
+        else if (d.id.startsWith("31")) {return "#91b191"}})
+        // .on("mouseover", function(d) { if (d.id == "36105" | d.id == "12031" | d.id == "31141") {d3.select(this).attr("fill", "#fff")}})
         .on("click", clickOrReset);
-    //
+
+    const country_outline = g.append("g")
+      .attr("id", "country_outline")
+      .selectAll("path")
+      .data(topojson.feature(us, us.objects.nation).features)
+      .join("path")
+        .attr("d", path)
+        .attr("fill", "none")
+        .attr("stroke", "#cccccc")
+
+
+    const state_boundaries = g.append("g")
+      .attr("id", "state-borders")
+      .selectAll("path")
+      .data(topojson.feature(us, us.objects.states).features)
+      .join("path")
+        .attr("d", path)
+        .attr("fill", "none")
+        .attr("z-index", function(d) {if (d.id == "36" | d.id == "12" | d.id == "31") { return "1" }
+        else {return "0"}})
+        .attr("stroke", "#cccccc")
+        // .attr("stroke", function(d) {if (d.id == "36") {return "#C4D8F3"}
+        // else if (d.id == "12") {return "#002e66"}
+        // else if (d.id == "31") { return "#91b191" }
+        // else {return "#cccccc"}})
+
     // const ny_counties = g.append("g")
     //   .attr("id", "counties")
     //   .attr("cursor", "pointer")
@@ -118,15 +155,17 @@ d3.json("https://d3js.org/us-10m.v1.json")
 
         // filter for particular states by FIPS code & make other counties not interactive
       // us.objects.states.filter(function(d) { return d.geometries[0].id == stateID; })
-      // ids: NY,
-    g.append("path")
-        .attr("id", "state-borders")
-        .attr("fill", "none")
-        .attr("stroke", "white")
-        .attr("stroke-linejoin", "round")
-        .attr("d", path(topojson.mesh(us, us.objects.states, (a, b) => a !== b)));
+    //   // ids: NY,
 
 
+    // g.append("path")
+    //     .attr("id", "state-borders")
+    //     .attr("fill", "none")
+    //     .attr("d", path(topojson.mesh(us, us.objects.states, (a, b) => a !== b)))
+    //     .attr("stroke", function(d) {if (d.id == "36" | d.id == "12" | d.id == "31") {return "#fff"}
+    //         else {return "#cccccc"}})
+    //     .attr("stroke-linejoin", "round");
+    //
     svg.call(zoom);
 
     function reset() {
