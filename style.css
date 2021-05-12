@@ -52,6 +52,7 @@ section {
 /* ECFFF0 */
 #intro p {
   font-size: 1.5em;
+  color: white;
 }
 #money_group {
   height: 30vh;
@@ -63,7 +64,8 @@ section {
   font-family: Poppins;
   text-align: center;
   font-size: 4em;
-  color: black;
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 #viz1 {
@@ -186,7 +188,7 @@ p {
   position: absolute;
   margin-left: 40%;
   margin-right: auto;
-  width: 20%;
+  width: 250px;
   top: 35%;  /* margin-top: 55%; */
 }
 #duval_info {
