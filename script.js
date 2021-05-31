@@ -71,7 +71,7 @@ d3.json("https://d3js.org/us-10m.v1.json")
         .attr("cursor", "pointer")
         .attr("class", "county-boundary")
         .attr("stroke", function(d) {if (d.id.startsWith("36")) {return "#C4D8F3"}
-        else if (d.id.startsWith("12")) {return "#002e66"}
+        else if (d.id.startsWith("12")) {return "#f8d3e7"}
         else if (d.id.startsWith("31")) {return "#91b191"}
         else {return "#fff"}})
         // .attr("stroke", function(d) {if (d.id.startsWith("36")) {return "#254E70"}
@@ -80,8 +80,8 @@ d3.json("https://d3js.org/us-10m.v1.json")
         // else {return "#d9d9d9"}})
         .style("fill", function(d) { if (d.id == "36105") {return "#254E70"}
         else if (d.id.startsWith("36")) {return "#C4D8F3"}
-        else if (d.id == "12031") {return "#C6E0FF"}
-        else if (d.id.startsWith("12")) {return "#002e66"}
+        else if (d.id == "12031") {return "#64113F"}
+        else if (d.id.startsWith("12")) {return "#f8d3e7"}
         else if (d.id == "31141") { return "#00272B" }
         else if (d.id.startsWith("31")) {return "#91b191"}})
         // .on("mouseover", function(d) { if (d.id == "36105" | d.id == "12031" | d.id == "31141") {d3.select(this).attr("fill", "#fff")}})
