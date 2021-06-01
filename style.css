@@ -74,11 +74,11 @@ section {
   position: absolute;
 }
 
-#tableauViz1 {
+#viz1622573530594 {
   margin-left: auto ;
   margin-right: auto ;
-  width: 100%;
-  height: 60vh;
+  /* width: 100%;
+  height: 60vh; */
 }
 
 .titletext {
@@ -108,8 +108,7 @@ p {
   width: 100%;
   position: absolute;
 }
-#viz1610557469475 {
-  display: block;
+#viz1622573658910 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -118,9 +117,7 @@ p {
   width: 100%;
   position: absolute;
 }
-#viz1607997707548 {
-  display: block;
-
+#viz1622574259082 {
   margin-left: auto;
   margin-right: auto;
   /* width: 100%; */
