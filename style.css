@@ -134,7 +134,7 @@ p {
   text-align: center;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
@@ -161,11 +161,11 @@ h3 {
   float: right;
 }
 #introPics {
-  height: 60vh;
-  width: 80vw;
+  height: 40vh;
+  width: 70vw;
   /* display: block; */
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 5%;
 }
 #mapzoom {
@@ -186,26 +186,26 @@ h3 {
 #sullivan_info {
   display: none;
   position: absolute;
-  margin-left: 40%;
+  margin-left: 41%;
   margin-right: auto;
   width: 250px;
-  top: 35%;  /* margin-top: 55%; */
+  top: 38%;  /* margin-top: 55%; */
 }
 #duval_info {
   display: none;
   position: absolute;
-  margin-left: 35%;
+  margin-left: 38%;
   margin-right: auto;
-  width: 30%;
-  top: 35%;  /* margin-top: 55%; */
+  width: 25%;
+  top: 36%;  /* margin-top: 55%; */
 }
 #platte_info {
   display: none;
   position: absolute;
-  margin-left: 35%;
+  margin-left: 37%;
   margin-right: auto;
-  width: 30%;
-  top: 27%;  /* margin-top: 55%; */
+  width: 27%;
+  top: 29%;  /* margin-top: 55%; */
 }
 #states {
   fill: #aaa;
@@ -379,11 +379,9 @@ li {
   font-weight: bold;
   color: #E15759;
 }
-#viz1608242384869 {
-  width: 70%;
-  margin-top: 3%;
-  float: left;
-  padding-left: 3%;
+#viz1622661605282 {
+  margin-left: auto;
+  margin-right: auto;
 }
 #tellFullStory {
   top: 700vh;
@@ -408,10 +406,9 @@ li {
   width: 100%;
   position: absolute;
 }
-#viz1608244711325 {
+#viz1622662779406 {
   margin-left: auto;
   margin-right: auto;
-  display: block;
 }
 #conclusion {
   top: 900vh;
