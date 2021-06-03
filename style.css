@@ -132,7 +132,7 @@ h3 {
   margin-right: 20%;
   text-align: center;
   width: 60%;
-  font-weight: 100;
+  font-weight: normal;
   font-family: Raleway;
 
 }
@@ -144,7 +144,7 @@ h3 {
   font-family: Raleway;
 }
 .boldText {
-  font-weight: bold;
+  font-weight: 900;
   color: #BE6E9F;
 }
 .col2 {
@@ -278,8 +278,13 @@ h3 {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+#conclusion h4 {
+  font-size: 1.15em;
+}
 #conclusion .titletext {
   background-color: inherit;
+  position:relative;
+  top: 0vh;
 }
 #methods {
   top: 1000vh;
@@ -289,6 +294,15 @@ h3 {
   color: white;
   position: absolute;
   width: 100%;
+}
+#lastline {
+  text-shadow: 2px 2px black;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.bolder {
+  font-weight: 900;
 }
 #methods p {
   font-size: 17px;
