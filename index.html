@@ -12,63 +12,44 @@
   </head>
   <body>
     <nav>
-      <a href="#">introduction</a>
-      <a href="#">three median teachers</a>
-      <a href="#">the national picture</a>
-      <a href="#">cost of living</a>
-      <a href="#">methods and sources</a>
+      <a href="#viz1">introduction</a>
+      <a href="#introTeachers">three median teachers</a>
+      <a href="#nationalPic">the national picture</a>
+      <a href="#costOfLiving">cost of living</a>
+      <a href="#methods">methods and sources</a>
     </nav>
     <section id="intro">
       <h1 style="font-family: Poppins">How much do teachers make?</h1>
       <p style="font-family: Raleway">A lot of people talk about this question. We decided to look at one aspect of the data—geography—to understand how where you teach affects what you make.</p>
-      <img src="money_group.svg" alt="Group of teachers surrounded by dollar signs." id="money_group">
+      <img src="img/money_group.svg" alt="Group of teachers surrounded by dollar signs." id="money_group">
     </section>
     <section id="viz1">
       <h2 class="titletext">It turns out pay <i>really</i> depends on where you teach.</h2>
-      <!-- <div class="col1"> -->
-      <!-- </div>
-      <div class="col2"> -->
       <h3>Average teacher salary varies widely by state. As these graphs show, the average teacher in Mississippi makes $40,000 less than the average teacher in New York.</h3>
 
         <div id="tableauViz1">
           <div class='tableauPlaceholder' id='viz1622573530594' style='position: relative'><noscript><a href='#'><img alt='Average Annual Teacher Pay by State ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FT&#47;FT2WHTY9D&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;FT2WHTY9D' /> <param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FT&#47;FT2WHTY9D&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622573530594');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='700px';vizElement.style.height='500px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         </div>
-
-      <!-- </div> -->
     </section>
     <section id="countyViz">
       <h2 class="titletext">Things get even more complex on the county level.</h2>
-      <!-- <div class="col1"> -->
-      <!-- </div>
-      <div class="col2"> -->
       <h3>Not only does the number of teachers differ signficantly between counties, but the average weekly wage for teachers does too.</h3>
 
         <div id="tableauCountyViz">
           <div class='tableauPlaceholder' id='viz1622573658910' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationofPublicElementarySecondarySchoolTeachersByCounty&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='PopulationofPublicElementarySecondarySchoolTeachersByCounty&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;PopulationofPublicElementarySecondarySchoolTeachersByCounty&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622573658910');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='700px';vizElement.style.height='527px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='700px';vizElement.style.height='527px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      <!-- </div> -->
       </div>
-      <!--  In this graph, you can see that the areas with higher weekly wages and higher teacher populations tend to be clustered around big cities like Boston or Chicago. -->
-
     </section>
     <section id="districtViz">
       <h2 class="titletext">And even within counties, pay differs widely by school district.</h2>
-      <!-- <div class="col1"> -->
-      <!-- </div>
-      <div class="col2"> -->
       <h3>We can see this in action by taking a closer look at the school districts of three states. New York has far more districts than Florida or Nebraska, but teacher salary varies widely between each district. So, although on average teachers in New York make more than those in other states, this is complicated by the sheer number of districts in the state.</h3>
 
         <div id="tableauViz2">
           <div class='tableauPlaceholder' id='viz1622574259082' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageTeacherSalaryPerDistrictFLNEandNY&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AverageTeacherSalaryPerDistrictFLNEandNY&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Av&#47;AverageTeacherSalaryPerDistrictFLNEandNY&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622574259082');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='700px';vizElement.style.height='410px';  var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>        </div>
-
-      <!-- </div> -->
     </section>
     <section id="introTeachers">
       <h2 class="titletext">What do these numbers mean on an individual scale?</h2>
-      <!-- <div class="col1"> -->
         <h3>Here are three teachers who make the <span class="boldText"> average teacher salary for their county</span> and roughly the <span class="boldTextRed">median teacher salary for their state</span>. Let’s learn more about their counties to see how these differences in pay play out.</h4>
-      <!-- </div>
-      <div class="col2"> -->
-        <img src="intro-pics_1.svg" alt="intro teachers pics" id="introPics">
-      <!-- </div> -->
+        <img src="img/intro-pics_1.svg" alt="intro teachers pics" id="introPics">
     </section>
     <section id="mapzoom">
       <h2 class="titletext">Click to get to know their counties.</h2>
@@ -78,67 +59,22 @@
       <script>
         generateMapZoom()
       </script>
-      <img src="sullivan_info.svg" id="sullivan_info"></img>
-      <img src="duval_info.svg" id="duval_info"></img>
-      <img src="platte_info.svg" id="platte_info"></img>
+      <img src="img/sullivan_info.svg" id="sullivan_info"></img>
+      <img src="img/duval_info.svg" id="duval_info"></img>
+      <img src="img/platte_info.svg" id="platte_info"></img>
     </section>
   </body>
-    <!-- <section id="sullivanCounty" class="county">
-      <div class="col1">
-        <img src="sullivan.svg" alt="Sullivan graphic" id="sullivan">
-      </div>
-      <div class="col2">
-        <h2 class="county_titletext">Sullivan County, at a Glance</h2>
-        <ul class="county_list" id="sullivan_list">
-          <li>Joanna, who works in Sullivan County, has a cat, who is nicknamed the "Teacher's Pet."</li>
-          <li>She makes $20-30,000 more a year than Max or Alice, which goes to show how New York pays its teachers more than any other state in the U.S., on average.</li>
-          <li>However, this pay varies across districts, and New York has more districts than either Nebraska or Florida.</li>
-        </ul>
-        <img src="joanna1.svg" alt="Joanna graphic" id="joanna">
-        <!-- <img src="fish.svg" alt="Joanna's fish" id="fish"> -->
-      <!-- </div>
-    </section>
-    <section id="duvalCounty" class="county">
-      <div class="col1">
-        <img src="duval.svg" alt="Duval graphic" id="duval">
-      </div>
-      <div class="col2">
-        <h2 class="county_titletext">Duval County, at a Glance</h2>
-        <ul class="county_list" id="duval_list">
-          <li>Alice works in Duval County, the most populous of the three, but earns around $8,000 less than Max, and $30,000 less than Joanna.</li>
-          <li>She loves to garden, and keeps lots of houseplants.</li>
-          <li>Her home state of Florida is in the bottom 5 U.S. states in terms of average teacher salary.</li>
-        </ul>
-        <img src="alice1.svg" alt="Alice graphic" id="alice">
-        <!-- <img src="plant.png" alt="Alice's plant" id="plant"> -->
-      <!-- </div>
-    </section>
-    <section id="platteCounty" class="county">
-      <div class="col1">
-        <img src="platte.svg" alt="Platte graphic" id="duval">
-      </div>
-      <div class="col2">
-        <h2 class="county_titletext">Platte County, at a Glance</h2>
-        <ul class="county_list" id="platte_list">
-          <li>Max lives in Platte County, the least dense county of the three in terms of population.</li>
-          <li>He likes to paint on weekends to relax.</li>
-          <li>He makes around $20,000 less than Joanna but $8,000 more than Alice, which reflects how Nebraska on average pays teachers close to the median salary across all states.</li>
-        </ul>
-        <img src="max1.svg" alt="Max graphic" id="max">
-        <!-- <img src="paint.png" alt="Max's paint" id="paint"> -->
       </div>
     </section> --> --> -->
     <section id="nationalPic">
       <h2 class=titletext>Compared to national numbers, these salaries fall short.</h2>
-      <!-- <div class="cols">
-        <div class="col1"> -->
       <h3>Despite the fact that <a href="https://nces.ed.gov/fastfacts/display.asp?id=58">over half of public school teachers in the U.S. hold a postbaccalaureate degree</a>, they tend to make less than Bachelor's degree holders.</h3>
 
       <div class='tableauPlaceholder' id='viz1622661605282' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheNationalPicture&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TheNationalPicture&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Th&#47;TheNationalPicture&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622661605282');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='725px';vizElement.style.height='550px';                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>    </section>
     <section id="tellFullStory">
       <h2 class=titletext>Plus, these statistics can't tell us the full story.</h2>
       <h3>How far someone’s salary can stretch is impacted by other factors in their life, beyond location and occupation. Do they have kids? Do they have a partner? Do they prioritize saving? How much money do they spend on items other than food or shelter?</h3>
-      <img src="full-story.svg" alt="Graphic of each teacher surrounded by icons of money, houses, and clothing." id="full_story">
+      <img src="img/full-story.svg" alt="Graphic of each teacher surrounded by icons of money, houses, and clothing." id="full_story">
     </section>
     <section id="costOfLiving">
       <h2 class=titletext>Interactive Cost of Living Tool</h2>
