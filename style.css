@@ -181,7 +181,7 @@ h3 {
   margin-left: 41%;
   margin-right: auto;
   width: 250px;
-  top: 38%;  
+  top: 38%;
 }
 #duval_info {
   display: none;
@@ -280,10 +280,6 @@ h3 {
 }
 #conclusion .titletext {
   background-color: inherit;
-}
-#conclusion h3 {
-  margin-left: 15%;
-  margin-right: 15%;
 }
 #methods {
   top: 1000vh;
